@@ -8,7 +8,7 @@ scor='\033[0m'
 GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
 SCOLOR='\033[0m'
-[[ $(awk -F" " '{print $2}' /usr/lib/licence) == "@INTERDROP" ]] && {
+[[ $(awk -F" " '{print $2}' /usr/lib/licence) == "@KIRITO_SSH" ]] && {
 	ram1=$(free -h | grep -i mem | awk {'print $2'})
 	ram2=$(free -h | grep -i mem | awk {'print $4'})
 	ram3=$(free -h | grep -i mem | awk {'print $3'})
@@ -796,9 +796,9 @@ SCOLOR='\033[0m'
 				cd /etc/stunnel/
 				rm -rf stunnel.conf
 				rm -rf stunnel.pem
-				wget https://raw.githubusercontent.com/Interdrop/SSHPLUS/main/Install/cert
-				wget https://raw.githubusercontent.com/Interdrop/SSHPLUS/main/Install/key
-				wget https://raw.githubusercontent.com/Interdrop/SSHPLUS/main/Install/stunnel
+				wget https://raw.githubusercontent.com/Interdrop/SSHPLUS/master/Install/cert
+				wget https://raw.githubusercontent.com/Interdrop/SSHPLUS/master/Install/key
+				wget https://raw.githubusercontent.com/Interdrop/SSHPLUS/master/Install/stunnel
 				mv cert cert.pem
 				mv key key.pem
 				mv stunnel stunnel.conf
