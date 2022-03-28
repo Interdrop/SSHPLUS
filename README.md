@@ -1,4 +1,4 @@
-# SSHPLUS
+# SSHGO
 
 apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/Interdrop/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
 
